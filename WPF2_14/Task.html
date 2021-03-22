@@ -1,0 +1,113 @@
+﻿
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>Windows Presentation Foundation - Lab Task</title>
+        <meta http-equiv="Content-type" content="text/html; charset=UTF-8" />
+    </head>
+    <body>
+        <h1>Password Manager</h1>
+        <p>
+            Your task is to create a base for simple password manager application. It will allow user to store images and account information for various websites. User data can be organized into folders. This is a first part of WPF Task for 12 points. In case of any doubts concerning the task, please inspect the sample application or consult your teacher.
+        </p>
+        <h2>Laboratory Part</h2>
+        <ul>
+            <li><a href="WPF14_LabTask.exe">Sample Application</a></li>
+            <br />
+            <li>
+                Main window:
+                <ul>
+                    <li>Title:         "Password Manager"</li>
+                    <li>Initial size:  1200x600</li>
+                    <li>Minimum size:   600x300</li>
+                    <li>Opens in the center of the screen</li>
+                </ul>
+            </li>
+            <br />
+            <li>
+                Login screen:
+                <ul>
+                    <li>Content in the center of the screen</li>
+                    <li>"Password" text above Password input box and "Unlock" Button</li>
+                    <li>Pasword input masks password</li>
+                    <li>Unlock button switches application to the main screen</li>
+                </ul>
+            </li>
+            <br />
+            <li>
+                Main screen:
+                <ul>
+                    <li>Menu with items aligned to the right with font size 14</li>
+                    <li>"Save" "Logout" and "Password Generator" menu options</li>
+                    <li>Logout switches application to the Login screen</li>
+                    <li>Screen divided into left and right parts, right is always 4 times larger than the left</li>
+                </ul>
+            </li>
+            <br />
+            <li>
+                Left part:
+                <ul>
+                    <li>Tree of folders and files</li>
+                    <li>Right click opens context menu. Options to add directories, password files and image files with unique names</li>
+                    <li>Right click on directories opens context menu. It displays directory name in the top. Option to add chilld directories to directories</li>
+                    <li>Directories are displayed with bold font and files with italic</li>
+                </ul>
+            </li>
+            <br />
+            <li>
+                Right part:
+                <ul>
+                    <li>Changes depending on the element selected in the tree</li>
+                    <li>For selected directories it displays directory name and number of elements in this directory</li>
+                    <li>For selected images it displays <a href="TopSecret.png">TopSecret.png</a> image</a></li>
+                    <li>For selected passwords it displays password editor</li>
+                </ul>
+            </li>
+            <br />
+            <li>
+                Password editor:
+                <ul>
+                    <li>Editor diided into left and right parts</li>
+                    <li>Parts can be resized. Minimum widths of the left and right parts are 150 and 300</li>
+                    <li>List of passwords on the left. List has no horizontal scroll bar and vertical scroll bar displays only if needed</li>
+                    <li>List items show password image, name, login and colored strength of the password. Each strength level has unique color. Password strength should display to the right of an item. Use <strong>PasswordStrengthUtils.CalculatePasswordStrength</strong> from <strong>PasswordStrength.cs</strong></li>
+                    <li>Button to add new passwords</li>
+                    <br />
+                    <li>Password form to the right. Setting password icon, name, email, login, password, website and notes</li>
+                    <li>Email, login and passwords have "Consolas" font</li>
+                    <li>Notes input has multiple lines of text with minimum of 5 and maximum of 10 lines</li>
+                    <li>Under the password there is a progress bar that shows strength of the password and is colored with the same color as password strength in the list. It updates during editing</li>
+                    <br />
+                    <li><strong>Use converters for password strength text, colors and progress bar</strong></li>
+                </ul>
+            </li>
+        </ul>
+        <ul>
+            <li>
+                Tips:
+
+                <ul>
+                    <li>
+                        Frame, Page, TreeView, ContentControl, DataTemplate, GridSeparator, INotifyPropertyChanged, IValueConverter, ICommand
+                    </li>
+                </ul>
+            </li>
+
+            <li>
+                Points:
+
+                <ul>
+                    <li>Main window and login screen <strong>1p</strong></li>
+                    <li>Main screen menu and changing between screens <strong>1p</strong></li>
+                    <li>Tree of folders and files <strong>2p</strong></li>
+                    <li>Adding directories to directories <strong>1p</strong></li>
+                    <li>Changing right part depending on selected item <strong>2p</strong></li>
+
+                    <li>List of passwords <strong>2p</strong></li>
+                    <li>Password form and password editor resizing <strong>3p</strong></li>
+                </ul>
+            </li>
+        </ul>
+
+    </body>
+</html>

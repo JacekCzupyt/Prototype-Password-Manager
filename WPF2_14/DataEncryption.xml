@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>DataEncryption</name>
+    </assembly>
+    <members>
+        <member name="M:WPF_Project.DataEncryption.Encrypt(System.String,System.Byte[])">
+            <summary>
+            Encrypts provided <paramref name="data"/> using the <paramref name="passPhrase"/> as a password and returns encrypted data.
+            </summary>
+            <param name="passPhrase">Password used to encrypt.</param>
+            <param name="data">Data to encrypt.</param>
+            <returns>Encrypted data.</returns>
+        </member>
+        <member name="M:WPF_Project.DataEncryption.Decrypt(System.String,System.Byte[])">
+            <summary>
+            Decrypts encrypted <paramref name="cipherData"/> using the <paramref name="passPhrase"/> as a password. If the password is correct, then it returns decrypted data. In the other case it returns null.
+            </summary>
+            <param name="passPhrase">Password used to decrypt.</param>
+            <param name="cipherData">Data to decrypt.</param>
+            <returns>Decrypted data or null if the password is incorrect.</returns>
+        </member>
+    </members>
+</doc>
